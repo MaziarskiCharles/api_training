@@ -18,14 +18,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
-class HelloControllerIT {
+class HelloControllerTest {
 
     private final MockMvc mockMvc;
 
     @MockBean
     private HelloRepository repository;
 
-    HelloControllerIT(@Autowired MockMvc mockMvc) {
+    HelloControllerTest(@Autowired MockMvc mockMvc) {
         this.mockMvc = mockMvc;
     }
 
